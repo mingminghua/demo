@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.model.UserInfo;
+import com.github.pagehelper.PageInfo;
 
 /**
  * @author 华明铭
@@ -10,5 +11,7 @@ import com.example.demo.model.UserInfo;
 public interface UserInfoService {
 
     UserInfo selectById(Integer id);
+
+    PageInfo<UserInfo> selectAll(Integer page, Integer size);
 
 }
